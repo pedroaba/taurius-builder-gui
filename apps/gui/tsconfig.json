@@ -1,5 +1,36 @@
 {
-  "files": [],
-  "references": [{ "path": "./tsconfig.web.json" }, { "path": "./tsconfig.node.json" }],
-  "extends": "@taurius/tsconfig/library.json"
+  "compilerOptions": {
+    "strict": true,
+    "target": "ESNext",
+    "lib": [
+      "ESNext",
+      "dom",
+      "dom.iterable"
+    ],
+    "types": ["electron-vite/node"],
+    "jsx": "react-jsx",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "isolatedModules": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/renderer/src/*"],
+    }
+  },
+  "include": [
+    "src",
+    "src/preload/index.d.ts",
+    "electron.vite.config.*"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
 }
