@@ -1,0 +1,18 @@
+{
+  "name": "@taurius/communication",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.ts",
+  "types": "index.ts",
+  "devDependencies": {
+    "@taurius/eslint-config": "workspace:*",
+    "@taurius/tsconfig": "workspace:*",
+    "@taurius/prettier": "workspace:*"
+  },
+  "prettier": "@taurius/prettier",
+  "eslintConfig": {
+    "extends": [
+      "@taurius/eslint-config/next"
+    ]
+  }
+}
