@@ -1,9 +1,16 @@
-import { Button } from './components/ui/button'
+import { Route, Router } from 'electron-router-dom'
+
+import { RootLayout } from './layouts/root'
+import { Home } from './pages/home'
 
 export function App() {
   return (
-    <main>
-      <Button>Teste</Button>
-    </main>
+    <Router
+      main={
+        <Route path="/" element={<RootLayout />}>
+          <Route path="/" element={<Home />} />
+        </Route>
+      }
+    />
   )
 }
