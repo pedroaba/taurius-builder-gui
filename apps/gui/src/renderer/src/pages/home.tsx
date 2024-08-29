@@ -1,5 +1,5 @@
 import Logo from '@/assets/logo.png'
-import { Button } from '@/components/ui/button'
+import { ProjectCreateDialog } from '@/components/project-create-dialog'
 
 export function Home() {
   return (
@@ -12,7 +12,7 @@ export function Home() {
         </span>
       </div>
 
-      <Button className="w-64">Criar projeto</Button>
+      <ProjectCreateDialog />
     </main>
   )
 }

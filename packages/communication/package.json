@@ -4,6 +4,9 @@
   "private": true,
   "main": "index.ts",
   "types": "index.ts",
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
   "devDependencies": {
     "@taurius/eslint-config": "workspace:*",
     "@taurius/tsconfig": "workspace:*",
