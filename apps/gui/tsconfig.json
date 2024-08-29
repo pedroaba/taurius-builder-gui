@@ -1,5 +1,5 @@
 {
   "files": [],
-  "references": [{ "path": "./tsconfig.node.json" }, { "path": "./tsconfig.web.json" }],
-  "extends": "@taurius/tsconfig/node.json"
+  "references": [{ "path": "./tsconfig.web.json" }],
+  "extends": "@taurius/tsconfig/library.json"
 }
