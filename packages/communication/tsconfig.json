@@ -1,6 +1,0 @@
-{
-  "extends": "@taurius/tsconfig/library.json",
-  "include": [
-    "**/*"
-  ]
-}

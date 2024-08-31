@@ -11,7 +11,7 @@ export function Header() {
       >
         Taurius Builder
       </NavLink>
-      <div className="space-x-4">
+      <div className="flex items-center space-x-4">
         <NavLink
           to="/history"
           className="text-sm font-medium text-slate-900 hover:text-slate-600 dark:text-slate-50 dark:hover:text-slate-300"
